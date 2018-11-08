@@ -30,7 +30,11 @@ int main() {
             cin >> word;
             string isFound = trie->Find(word) ? " Found " : " Not Found ";
             cout << "The word " << word << isFound << " in Trie " << endl;
-        } 
+        }
+        else if( choice == 3 ) {
+            cout << "The Trie is " << endl;
+            trie->printTrie();
+        }
         else {
             break;
         }

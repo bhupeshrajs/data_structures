@@ -5,10 +5,11 @@
 class Trie 
 {
 public:
-    Trie() = default;
+    Trie();
     virtual ~Trie() = default;
     void Insert(const std::string & _word);
     bool Find(const std::string & _query);
+    void printTrie();
 protected:
     std::shared_ptr<TrieNode> getHead();        
 private:
